@@ -2,50 +2,37 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         // Conditional Structure
-        boolean ihaveNoMoney = true;
+        boolean suspended = true;
 
-        if (ihaveNoMoney) {
-            System.out.println("Ask your parents to drive you to NU");
+        if (suspended) {
+            System.out.println("stay at home");
         } else {
             // Step 1
-            rideJeep();
+            walkLRT();
 
             // Step 2
-            rideBus();
-
-            // Step 3
             rideLRT();
 
-            // Step 4
-            rideTricycle();
-
-            // Step 5
+            // Step 3
             walk();
         }
 
     }
 
-    static void rideJeep() {
-        System.out.println("Ride jeep along katipunan Street");
-        System.out.println("Exit jeep along Sumulong Highway");
+    static void walkLRT() {
+        System.out.println("Walk from home to LRT station");
+        System.out.println("");
     }
 
-    static void rideBus() {
-        System.out.println("Ride bus along Sumulong Highway");
-        System.out.println("Exit bus at SM Masinag");
-    }
+
 
     static void rideLRT() {
-        System.out.println("Ride at Antipolo station");
+        System.out.println("Ride at Cubao station");
         System.out.println("Exit at Legarda station");
     }
 
-    static void rideTricycle() {
-        System.out.println("Ride tricycle at Figueras Street");
-        System.out.println("Exit tricycle at Jhocson Street");
-    }
 
     static void walk() {
-        System.out.println("Walk for 3 mins");
+        System.out.println("Walk for 5 mins");
     }
 }
